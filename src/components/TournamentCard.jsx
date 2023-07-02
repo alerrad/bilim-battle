@@ -11,15 +11,15 @@ function TournamentCard(props) {
             <h3>{props.name}</h3>
             <ul>
               <li>
-                <b>Prize:</b> 
+                <b>Prize: </b> 
                 {props.prize}tg
               </li>
               <li>
-                <b>Grade:</b> 
+                <b>Grade: </b> 
                 {props.grade}
               </li>
               <li>
-                <b>Date:</b> 
+                <b>Date: </b> 
                 {props.date}
               </li>
             </ul>
