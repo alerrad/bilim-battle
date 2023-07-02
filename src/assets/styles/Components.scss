@@ -1,0 +1,196 @@
+nav {
+  padding: 20px 0;
+
+  .navlinks {
+    width: 300px;
+    font-size: 18px;
+  }
+}
+
+.join {
+  color: #fff;
+  background-color: #000;
+  margin-top: 40px;
+}
+
+.hero-heading {
+  font-size: 40px;
+}
+
+.stained-text {
+  max-width: 400px;
+  margin-top: 30px;
+}
+
+section,
+footer {
+  padding: 100px 0;
+}
+
+// USER PAGE
+.user-hero {
+  background-image: url("../../../public/user-hero.png");
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 10rem;
+  margin-bottom: 40px;
+}
+
+img[alt="avatar"] {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 20px #bbb;
+}
+
+.info {
+  padding: 20px;
+  box-shadow: 0 2px 5px #ccc;
+  width: 60%;
+  border-radius: 10px;
+
+  ul {
+    list-style: none;
+    margin-top: 30px;
+    font-size: 20px;
+    color: #444;
+
+    li {
+      margin-top: 15px;
+      &:last-of-type {
+        font-size: 17px;
+      }
+    }
+  }
+}
+
+// Tournaments page
+
+#tournament-search,
+#search-type {
+  box-shadow: 0 2px 10px #ccc;
+}
+
+#search-type {
+  margin-left: 30px;
+  font-size: 18px;
+}
+
+#tournament-hero {
+  background-image: url(../img/hero-back.jpg);
+  background-size: cover;
+  background-position: center;
+
+  h1 {
+    font-size: 40px;
+  }
+}
+
+.tournament-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+  gap: 1.5rem;
+  align-items: center;
+  align-content: center;
+
+  .card {
+    margin-top: 20px;
+    padding: 15px;
+    transition: all 0.3s;
+    border-radius: 10px;
+
+    ul {
+      list-style: none;
+      color: #555;
+      margin-top: 25px;
+      line-height: 30px;
+    }
+
+    img {
+      max-width: 125px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+    }
+
+    &:hover {
+      background-color: #efefef;
+    }
+  }
+}
+
+// Exact tournament page
+
+.tournament {
+  background-color: #efefef;
+
+  img {
+    max-width: 300px;
+    border-radius: 10px;
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  ul {
+    margin-top: 40px;
+    list-style: none;
+
+    li {
+      margin-top: 15px;
+    }
+  }
+}
+
+footer {
+  background-color: #000;
+  color: #fff;
+
+  .col {
+    width: 250px;
+    margin-top: 30px;
+  }
+
+  .media-links {
+    margin-top: 30px;
+    max-width: 150px;
+  }
+}
+
+// Log in page
+
+#tabs {
+  max-width: 300px;
+  margin: auto;
+
+  p {
+    cursor: pointer;
+    padding-bottom: 7px;
+  }
+}
+
+#auth {
+  form {
+    max-width: 400px;
+    margin: auto;
+    margin-top: 20px;
+
+    input {
+      width: 100%;
+      border: 2px #000 solid;
+      margin-top: 20px;
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .info {
+    width: 100%;
+  }
+  nav .navlinks {
+    display: none;
+  }
+}

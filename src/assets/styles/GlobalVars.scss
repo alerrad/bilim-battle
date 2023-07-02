@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap');
+
+$main-bg: #FFF;
+$main-info: #333;
+
+@mixin flexer($alignment: center, $j-content: space-between) {
+    display: flex;
+    align-items: $alignment;
+    justify-content: $j-content;
+    flex-wrap: wrap;
+}

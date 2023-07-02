@@ -1,0 +1,84 @@
+@import "Components";
+@import "GlobalVars";
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+main {
+    padding: 50px 0;
+}
+
+input, textarea, select {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    font-size: 20px;
+    color: #333;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+p {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+button {
+    background: none;
+    padding: 7px;
+    min-width: 150px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 13px;
+    cursor: pointer;
+}
+
+.container {
+    max-width: 1024px;
+    margin: auto;
+}
+
+.flex-center {
+    @include flexer();
+}
+
+.flex-start {
+    @include flexer($alignment: flex-start);
+}
+
+.flex-center-even {
+    @include flexer($alignment: center, $j-content: space-evenly);
+}
+
+.centered {
+    text-align: center;
+    align-items: center;
+    align-content: center;
+}
+
+.stained-text {
+    max-width: 400px;
+    margin-top: 30px;
+}
+
+.active {
+    border-bottom: 3px #333 solid;
+    font-weight: bold;
+}
+
+@media (max-width: 1024px) {
+    .container {
+        padding: 0 15px;
+    }
+}
