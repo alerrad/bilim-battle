@@ -23,8 +23,8 @@ export default function Tournaments() {
           <div className="stained-text">
             <h1 className="heading">Найди свое</h1>
             <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt
-              voluptatibus quidem architecto consectetur saepe quis.
+            На нашей платформе вы можете принять участие  в разных турнирах и соревноваться с другими участниками по всей стране и с любой точки 
+            в стране
             </p>
           </div>
         </div>

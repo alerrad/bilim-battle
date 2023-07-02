@@ -20,7 +20,7 @@ export default function Nav() {
           <Link to="/tournaments">Турниры</Link>
           <Link to="/stats">Статистика</Link>
         </div>
-        <Link to={isLoggedIn ? "/profile" : "/login"}>
+        <Link to={isLoggedIn ? `/user/${localStorage.getItem("id")}` : "/login"}>
           <button>
             {isLoggedIn ? (
               <svg
